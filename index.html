@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> website layout </title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="container">
+
+        <header>
+            <div id="top_nav">
+                <ul class="showing">
+                    <li><a href="index.html">SAYANZA</a></li>
+                    <li><a href="#">Qui Sommes-nous ?</a></li>
+                    <li><a href="#">Nos Partenaires</a></li>
+                    <li><a href="contact.html">Nous Contactez</a></li>
+                </ul>
+                <div class="handle">Menu<button>&#9776;</button></div>
+            </div>
+
+            <img src="indeximg/LOGO.JPG" alt="logo area" class="logo">
+
+            <div id="top_nav2">
+                <ul class="showing2">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="#">Nos Produits Et Services</a></li>
+                </ul>
+                <div class="handle2">Menu<button>&#9776;</button></div>
+            </div>
+
+            <div class="css-carousel">
+                <img src="indeximg/CAROUSEL/img01.JPG" class="css-img"/>
+                <img src="indeximg/CAROUSEL/img02.JPG" class="css-img"/>
+                <img src="indeximg/CAROUSEL/img03.JPG" class="css-img"/>
+                <img src="indeximg/CAROUSEL/img04.JPG" class="css-img"/>
+            </div>
+        </header>
+    </header>
+    <section class="main_side">
+        <article>
+            <header>
+                <h1> De L'innovation Dans La Communication Africaine</h1>
+                <h2> Chez SAYANZA nous innovons dans le domaone de la communication.</h2>
+            </header>
+            <img src="indeximg/IMG01.JPG">
+        </article>
+
+        <article>
+            <header>
+                <h1> Notre Equipe De Professionnels A Votre Ecoute  </h1>
+                <h2> Chez SAYANZA nous vous offrons des  services pour personnalisés nos pour votre pleine satisfaction.</h2>
+            </header>
+            <img src="indeximg/IMG02.JPG">
+        </article>
+
+
+        <article>
+            <header>
+                <h1> Trouvez Les Meilleurs Solutions  </h1>
+                <h2>Chez SAYANZA notre objectif est d'offrir les meilleurs solutions a votre organisation.</h2>
+            </header>
+            <img src="indeximg/IMG03.JPG">
+        </article>
+
+    </section>
+
+
+    <footer class="page_footer">
+
+        <ul>
+            <li><a href="contact.html">Nous Contactez </a></li>
+            <li><a href="#">Nos Partenaires</a></li>
+            <li><a href="#">Qui Sommes-nous</a></li>
+            <li><a href="index.html">SAYANZA</a>
+                <ul>
+                    <li><a href="#">Nos Produits</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <h3>&copy;2010-2017 SAYANZA CONTINENTAL. Tout Droits Réservés.</h3>
+
+    </footer>
+</div>
+
+
+
+</body>
+<script>
+    $(".handle").on("click", function(){
+        $("#top_nav").find("ul").toggleClass("showing");
+    });
+</script>
+<script>
+    $(".handle2").on("click", function(){
+        $("#top_nav2").find("ul").toggleClass("showing2");
+    });
+</script>
+</html>

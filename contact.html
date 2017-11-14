@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" href="contactcss.css" type="text/css">
+    <script src="jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div id="top_nav">
+            <ul class="showing">
+                <li><a href="index.html">SAYANZA</a></li>
+                <li><a href="#">Qui Sommes-nous ?</a></li>
+                <li><a href="#">Nos Partenaires</a></li>
+                <li><a href="contact.html">Nous Contactez</a></li>
+            </ul>
+            <div class="handle">Menu<button>&#9776;</button></div>
+        </div>
+
+        <img src="indeximg/LOGO.JPG" alt="logo area" class="logo">
+
+        <div id="top_nav2">
+            <ul class="showing2">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="#">Nos Produits Et Services</a></li>
+            </ul>
+            <div class="handle2">Menu<button>&#9776;</button></div>
+        </div>
+    </header>
+    <section class="main_side">
+        <article>
+            <header>
+                <img src="contactimg/mail.JPG">
+            </header>
+            <h1>  info@sayanza.com </h1>
+        </article>
+        <article>
+            <header>
+                <img src="contactimg/cell.JPG">
+            </header>
+            <h1> Service Client : 00 243 82 18 74 344  </h1>
+        </article>
+        <article>
+            <header>
+                <img src="contactimg/f.JPG">
+            </header>
+            <h1> <button> &#128269</button> Sayanza</h1>
+        </article>
+        <article>
+            <header>
+                <img src="contactimg/loc.JPG">
+            </header>
+            <h1> Kinshasa (RDC) 31, Avenue Comité Urbain-Gombe </h1>
+        </article>
+
+    </section>
+
+
+    <footer class="page_footer">
+
+        <ul>
+            <li><a href="contact.html">Nous Contactez </a></li>
+            <li><a href="#">Nos Partenaires</a></li>
+            <li><a href="#">Qui Sommes-nous</a></li>
+            <li><a href="index.html">SPHINX CONTINENTAL</a>
+                <ul>
+                    <li><a href="#">Nos Produits</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html"></a></li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <h3>&copy;2010-2017 SAYANZA. Tout Droits Réservés.</h3>
+
+    </footer>
+</div>
+<script>
+    $(".handle").on("click", function(){
+        $("#top_nav").find("ul").toggleClass("showing");
+    });
+</script>
+<script>
+    $(".handle2").on("click", function(){
+        $("#top_nav2").find("ul").toggleClass("showing2");
+    });
+</script>
+</body>
+</html>
